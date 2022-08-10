@@ -1,0 +1,280 @@
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>TCE CGPA CALCULATOR</title>
+   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet"
+      href="app.css"/>
+    <script
+      src="https://kit.fontawesome.com/0a03bb24ff.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="backend.js"></script>
+  </head>
+  <style>
+  body{
+      background-image: url('tce.jpg'); 
+      height: 100%;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+    }
+  </style>
+    <div class="wrapper">
+      <div class="container">
+        <center>
+          <div class="h1 m-3">CGPA Calculator for TCE</div>
+          <center>
+          <p>
+          <div style="position: relative">
+          <p style="position: fixed; bottom: 0; width:150%; text-align: center">
+            <mark>
+            Developed by
+            <a
+              class="font-weight-bold"
+               href="https://www.linkedin.com/in/madhava-ramanujam-077b5316b/" target="_blank"  
+              >Madhava Ramanujam</a
+              </mark>
+             </div>
+             </p>
+           </center>
+          <div id="cgpaCalc">
+            <table class="form">
+              <tr>
+                <td><mark>1st Semester:<mark></td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="gpa1"
+                    placeholder="GPA"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='GPA'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="cred1"
+                    placeholder="Total credits earned"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Total credits earned'"
+                    min="0"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><mark>2nd Semester:<mark></td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="gpa2"
+                    placeholder="GPA"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='GPA'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="cred2"
+                    placeholder="Total credits earned"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Total credits earned'"
+                    min="0"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><mark>3rd Semester:<mark></td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="gpa3"
+                    placeholder="GPA"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='GPA'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="cred3"
+                    placeholder="Total credits earned"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Total credits earned'"
+                    min="0"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><mark>4th Semester:<mark></td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="gpa4"
+                    placeholder="GPA"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='GPA'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="cred4"
+                    placeholder="Total credits earned"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Total credits earned'"
+                    min="0"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><mark>5th Semester:<mark></td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="gpa5"
+                    placeholder="GPA"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='GPA'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="cred5"
+                    placeholder="Total credits earned"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Total credits earned'"
+                    min="0"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><mark>6th Semester:<mark></td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="gpa6"
+                    placeholder="GPA"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='GPA'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="cred6"
+                    placeholder="Total credits earned"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Total credits earned'"
+                    min="0"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><mark>7th Semester:<mark></td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="gpa7"
+                    placeholder="GPA"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='GPA'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="cred7"
+                    placeholder="Total credits earned"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Total credits earned'"
+                    min="0"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><mark>8th Semester:<mark></td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="gpa8"
+                    placeholder="GPA"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='GPA'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="cred8"
+                    placeholder="Total credits earned"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Total credits earned'"
+                    min="0"
+                  />
+                </td>
+              </tr>
+            </table>
+            <br /> 
+            <span onclick="calculateCGPA()" class="btn btn-dark m-2">
+             Calculate CGPA
+            </span>
+              <div id="result"class="m-2"></div>
+             </span>
+            </div>
+          </div>
+        </center>
+        <br /><br />
+      </div>
+    </div>
+  </body>
+</html>
